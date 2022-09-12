@@ -1,0 +1,502 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+
+main {
+    min-height: 100%;
+}
+.top_header {
+    position: relative;
+    height: 25px;
+    background-color: #e4834c;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
+
+.main_header {
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 4;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.top_header_section a {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 0.07em;
+    
+
+}
+
+.top_header_section a:hover {
+    color: black;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+.top_header_section a b {
+    font-weight: 900;
+}
+
+.white-header {
+    background-color: white;
+}
+.col-20 {
+    width: 20%;
+    position: relative;
+    display: block;
+    float: left;
+    min-height: 1px;
+}
+
+.col-60 {
+    width: 60%;
+    position: relative;
+    display: block;
+    float: left;
+    min-height: 1px;
+}
+.header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_logo a{
+    display: block;
+    width: 130px;
+}
+
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.full_height {
+    height: 100%;
+}
+
+.pt {
+    padding-top: 30px;
+}
+.header_action {
+    margin-right: 15px;
+    font-size: 18px;
+    color: black;
+}
+
+.header_action a:hover {
+    color:#56cfe1;
+}
+
+.header_language a{
+    background-color: #8a837a;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.navigation-wrapper {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 5;
+}
+
+.main_nav li{
+    display: inline-block;
+
+}
+
+.nav-link {
+    color: black;
+    padding: 3px 20px;
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.shop-link {
+    font-weight: 900;
+}
+
+.nav-link:hover {
+    background-color: #eee;
+    clip-path: polygon(15% 0,100% 0,85% 100%,0% 100%);
+    transition: 0.3s;
+}
+
+.banner-img img{
+    margin-top: -140px;
+    display: flex;
+    width: 100%;
+    top: 0;
+    z-index: 0;
+}
+
+
+.col-33 {
+    width:33.33333%;
+    min-height: 1px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+ .col-33 img {
+    height: 60px;
+    width: 60px;
+ }
+
+
+ .icon {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0;
+ }
+
+ .text {
+    text-align: center;
+    line-height: 21px;
+    font-size: 15px;
+    font-weight: 300;
+ }
+ h6 {
+    margin: 0;
+    letter-spacing: 0.5px;
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 30px;
+ }
+
+ .margintop-250 {
+    margin-top: 250px;
+ }
+ .margintop-150 {
+    margin-top: 150px;
+ }
+ .margintop-50 {
+    margin-top: 50px;
+ }
+ .ali-flex_start{
+    align-items: flex-start;
+ }
+
+
+.products {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+ .txt-center {
+    text-align: center;
+ } 
+
+ .margintop-250 h2 {
+    font-weight: 500;
+ }.margintop-150 h2 {
+    font-weight: 500;
+ }.margintop-50 h2 {
+    font-weight: 500;
+ }.margintop-350 h2 {
+    font-weight: 500;
+ }
+ 
+
+ .product_list {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+ }
+ @media screen and (max-width:1000px) {
+    .product_list {
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: center;
+    }
+    .product-item_1 {
+        text-align: center;
+    }
+    .product-item_2 {
+        text-align: center;
+    }
+    .product-item_3 {
+        text-align: center;
+    }
+}
+
+ .product_list a img {
+    height:432px;
+    margin: 5px;
+ }
+
+
+.product-item_1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.product-item_2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.product-item_3 {
+    display: flex;
+    position: relative;
+    justify-content: center;;
+}
+.product-txt {
+    background-color: white;
+    position:absolute;
+    z-index: 2;
+    justify-content: center;
+    top: 50%;
+    left: 30%;
+    padding: 5px 20px;
+    font-weight: 600;
+ }
+ .product-txt:nth-child(3) {
+    left: 45%;
+ }
+ .product-txt a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.bestseller_items {
+    
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    
+
+}
+.bestseller_item-1 {
+    position: relative;
+    min-height: 1px;
+    width: 90%;
+    height: 90%;
+    background-image: url(https://crlab.com/media/catalog/product/cache/4a2dd9dbe2f734c9329b3004dfa48b4b/s/h/shampoo-seboregolatrice_1_3.jpg);
+    transition: 0.5s;
+    background-size: cover;
+}
+.bestseller_item-1:hover {
+    background-image:url(https://crlab.com/media/catalog/product/cache/4a2dd9dbe2f734c9329b3004dfa48b4b/_/0/_0000_img_6655_1_copia_1.jpg);
+    transition: 0.5s;
+}
+.bestseller_item-2 {
+    position: relative; 
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+    background-image: url(https://crlab.com/media/catalog/product/cache/4a2dd9dbe2f734c9329b3004dfa48b4b/s/h/shampoo-antiforfora_1.jpg);
+    transition: 0.5s;
+}
+.bestseller_item-2:hover {
+    background-image:url(https://crlab.com/media/catalog/product/cache/4a2dd9dbe2f734c9329b3004dfa48b4b/_/0/_0004_img_6597_1_copia_1.jpg);
+    transition: 0.5s;
+}
+.bestseller_item-3 {
+    position: relative;
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+    background-image: url(https://crlab.com/media/catalog/product/cache/4a2dd9dbe2f734c9329b3004dfa48b4b/s/h/shampooanticaduta_1.jpg);
+    transition: 0.5s;
+}
+.bestseller_item-3:hover {
+    background-image:url(https://crlab.com/media/catalog/product/cache/4a2dd9dbe2f734c9329b3004dfa48b4b/_/0/_0002_img_6568_2_copia_1.jpg);
+    transition: 0.5s;
+}
+
+.bestseller_item-4 {
+    position: relative;
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+    background-image: url(https://crlab.com/media/catalog/product/cache/4a2dd9dbe2f734c9329b3004dfa48b4b/l/i/linfoil-ristrutturante_1.jpg);
+    transition: 0.5s;
+}
+.bestseller_item-4:hover {
+    background-image:url(https://crlab.com/media/catalog/product/cache/4a2dd9dbe2f734c9329b3004dfa48b4b/_/0/_0018_img_6585_1_copia_2.jpg);
+    transition: 0.5s;
+}
+.bestseller-box {
+    width: 345.1px;
+    height: 500px;
+}
+@media screen and (max-width:1000px) {
+    .bestseller_items {
+    
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 2000px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.best-item_name {
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: .5px;
+    margin: auto;
+}
+
+.best-item_desc {
+    text-align: center;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 13px;
+}
+.best-item_price {
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.bestseller_item-1 a, .bestseller_item-2 a, .bestseller_item-3 a, .bestseller_item-4 a{
+    display: flex;
+}
+.min {
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.min:hover{
+    color: red;
+
+}
+
+.aggiugi:hover{
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.rev-container {
+    flex-direction: row;
+    background-color: #f0f5fb;
+    max-width: 100%;
+    height: 430px;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.grid-columns_3 {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+}
+
+.review-item {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.review-author {
+    text-align: center;
+    width: 60%;
+}
+
+.review-content {
+    line-height: 20px;
+    font-size: 15px;
+    width: 60%;
+    text-align: center;
+}
+.rev-score {
+    text-align: center;
+    width: 60%;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+}
+.item_icon img {
+    width:60px;
+}
+.assist {
+    text-align: center;
+}
+.assist_help {
+    font-weight: 100;
+    font-size: 14px;
+    text-align: center;
+    width: 80%;
+}
+
+.faq-link {
+    color: #8a837ac9;
+}
+.faq-link:hover {
+    color: #56cfe1;
+}
+
+
+
+.assist_button {
+    
+    padding: 5px 30px;
+    background-color: #fff1f1;
+}
+.first {
+    
+    background-color:#ecf3fb;
+    padding: 5px 30px;
+}
+
+.assist_button:hover {
+    border:1px solid #56cfe1;
+    
+}
+.first:hover {
+    border:1px solid #56cfe1;
+    
+}
